@@ -1,1 +1,570 @@
-CSS Here
+/* Our Lady of Guadalupe & St. Patrick Parishes
+   Extracted from the original homepage, preserving existing styles. */
+
+/* Navigation dropdown interactions */
+.dropdown:hover .dropdown-content {
+  display: block !important;
+}
+
+.dropdown-content a:hover {
+  background-color: #F7FAFC;
+  color: #1A365D !important;
+}
+
+.page-body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: #2D3748;
+  background-color: #F7FAFC;
+  line-height: 1.6;
+}
+
+.notice-bar {
+  background-color: #1A365D;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.notice-link {
+  color: #ECC94B;
+  text-decoration: underline;
+  margin-left: 5px;
+}
+
+.site-header {
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #E2E8F0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+}
+
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+}
+
+.brand-link {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+}
+
+.brand-logo {
+  height: 55px;
+  width: auto;
+}
+
+.brand-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #1A365D;
+  display: block;
+  line-height: 1.2;
+}
+
+.brand-subtitle {
+  font-size: 0.75rem;
+  color: #718096;
+  display: block;
+  font-style: italic;
+  margin-top: 2px;
+}
+
+.primary-nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #4A5568;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu-about {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 240px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+  border-radius: 6px;
+  padding: 10px 0;
+  z-index: 1;
+}
+
+.dropdown-menu-link {
+  color: #4A5568;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 0.9rem;
+}
+
+.dropdown-menu-worship {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 260px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+  border-radius: 6px;
+  padding: 10px 0;
+  z-index: 1;
+}
+
+.dropdown-menu-news {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+  border-radius: 6px;
+  padding: 10px 0;
+  z-index: 1;
+}
+
+.donate-nav {
+  text-decoration: none;
+  background-color: #C53030;
+  color: #FFFFFF;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.hero {
+  background: linear-gradient(rgba(26, 5, 93, 0.85), rgba(26, 54, 93, 0.85)), url('https://guadalupe-stpatrick.com/') center/cover no-repeat;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-size: 2.75rem;
+  margin: 0 0 20px 0;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.hero-description {
+  font-size: 1.15rem;
+  color: #E2E8F0;
+  margin-bottom: 30px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero-button {
+  background-color: #ECC94B;
+  color: #1A365D;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 700;
+}
+
+.parishes-section {
+  background-color: #FFFFFF;
+  padding: 50px 20px;
+  border-bottom: 1px solid #E2E8F0;
+}
+
+.parishes-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.parishes-title {
+  color: #1A365D;
+  font-size: 2rem;
+  margin: 0 0 10px 0;
+  font-weight: 700;
+}
+
+.parishes-intro {
+  color: #718096;
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+  font-size: 1rem;
+}
+
+.parishes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.parish-card {
+  background-color: #F7FAFC;
+  border: 1px solid #E2E8F0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.parish-image-wrap {
+  height: 240px;
+  overflow: hidden;
+  position: relative;
+}
+
+.parish-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.parish-card-content {
+  padding: 25px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.parish-card-title {
+  color: #1A365D;
+  margin: 0 0 8px 0;
+  font-size: 1.4rem;
+}
+
+.parish-card-address {
+  color: #4A5568;
+  font-size: 0.95rem;
+  margin: 0 0 15px 0;
+}
+
+.parish-card-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.parish-mass-link {
+  flex: 1;
+  text-align: center;
+  background-color: #1A365D;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.parish-join-link {
+  flex: 1;
+  text-align: center;
+  background-color: #E2E8F0;
+  color: #2D3748;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.main-content {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.formation-card {
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  border: 1px solid #E2E8F0;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.formation-columns {
+  padding: 35px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  background-color: #FFFFFF;
+}
+
+.formation-language-column {
+  flex: 1 1 450px;
+}
+
+.formation-heading {
+  color: #1A365D;
+  margin-top: 0;
+  font-size: 1.35rem;
+  border-bottom: 2px solid #E2E8F0;
+  padding-bottom: 8px;
+}
+
+.formation-list {
+  padding-left: 20px;
+  margin: 15px 0 0 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.formation-list-item {
+  margin-bottom: 12px;
+}
+
+.requirement-label {
+  color: #C53030;
+  font-weight: 600;
+}
+
+.formation-english-column {
+  flex: 1 1 450px;
+  border-left: 1px solid #EDF2F7;
+  padding-left: 20px;
+}
+
+.formation-contact-bar {
+  background-color: #F7FAFC;
+  padding: 20px 30px;
+  border-top: 1px solid #E2E8F0;
+  text-align: center;
+}
+
+.formation-contact-text {
+  margin: 0;
+  color: #2D3748;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.formation-phone-link {
+  color: #1A365D;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.formation-email-link {
+  color: #2B6CB0;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.info-card {
+  background-color: #FFFFFF;
+  padding: 30px;
+  border-radius: 8px;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.info-heading {
+  color: #1A365D;
+  margin-top: 0;
+  font-size: 1.25rem;
+  border-bottom: 2px solid #E2E8F0;
+  padding-bottom: 10px;
+}
+
+.hours-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.hours-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #EDF2F7;
+}
+
+.hours-day {
+  font-weight: 600;
+}
+
+.hours-closed {
+  color: #E53E3E;
+}
+
+.hours-row-last {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+}
+
+.contact-label {
+  margin: 15px 0 5px 0;
+  font-weight: 600;
+  color: #2D3748;
+}
+
+.contact-address {
+  margin: 0 0 15px 0;
+  color: #4A5568;
+  font-size: 0.95rem;
+}
+
+.contact-details {
+  margin: 0;
+  color: #4A5568;
+  font-size: 0.95rem;
+}
+
+.contact-email {
+  color: #2B6CB0;
+  text-decoration: none;
+}
+
+.giving-card {
+  background-color: #FFFFFF;
+  padding: 30px;
+  border-radius: 8px;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.giving-description {
+  color: #4A5568;
+  font-size: 0.95rem;
+  margin-top: 15px;
+}
+
+.giving-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.giving-button {
+  text-align: center;
+  background-color: #2B6CB0;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.newsletter {
+  background-color: #EBF8FF;
+  border: 1px solid #BEE3F8;
+  border-radius: 8px;
+  padding: 30px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.newsletter-heading {
+  color: #2B6CB0;
+  margin: 0 0 10px 0;
+}
+
+.newsletter-description {
+  color: #4A5568;
+  margin: 0 0 20px 0;
+  font-size: 0.95rem;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.newsletter-input {
+  padding: 10px 15px;
+  border: 1px solid #CBD5E0;
+  border-radius: 6px;
+  flex: 1 1 250px;
+  font-size: 0.95rem;
+}
+
+.newsletter-button {
+  background-color: #2B6CB0;
+  color: #FFFFFF;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.site-footer {
+  background-color: #1A365D;
+  color: #A0AEC0;
+  padding: 40px 20px 20px 20px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-social-link {
+  color: #CBD5E0;
+  text-decoration: none;
+}
+
+.footer-copyright {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #718096;
+}
+
